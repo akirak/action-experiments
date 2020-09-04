@@ -1,0 +1,19 @@
+Running checkdoc...
+javadoc-lookup.el:99:0: error: Argument ‘cache-file’ should appear (as CACHE-FILE) in the doc string (in jdl/load-cache)
+maven-fetch.el:51:0: error: First line is not a complete sentence (in maven-fetch)
+maven-fetch.el:71:0: error: Error messages should *not* end with a period (in maven-fetch-unpack)
+
+Running package-lint...
+Entering directory '/home/runner/.cache/elinter/pkg-src/javadoc-lookup/'
+javadoc-import.el:13:0: error: "jdl/import-regexp" doesn't start with package's prefix "javadoc-lookup".
+javadoc-import.el:13:0: error: `jdl/import-regexp' contains a non-standard separator `/', use hyphens instead (see Elisp Coding Conventions).
+javadoc-import.el:16:0: error: "jdl/package-regexp" doesn't start with package's prefix "javadoc-lookup".
+javadoc-import.el:16:0: error: `jdl/package-regexp' contains a non-standard separator `/', use hyphens instead (see Elisp Coding Conventions).
+
+Running melpazoid...
+- javadoc-lookup.el#L140: Consider ‘unless ...‘ instead of ‘when (not ...)‘
+- javadoc-lookup.el#L188: Prefer ‘https‘ over ‘http‘ if possible ([why?](https://news.ycombinator.com/item?id=22933774))
+Compiling javadoc-lookup.el...
+
+In toplevel form:
+javadoc-lookup.el:59:1:Error: defcustom for ‘javadoc-lookup-cache-dir’ fails to specify type

@@ -1,0 +1,7 @@
+name: 'action-experiments'
+description: 'Experiments on GitHub Actions'
+runs:
+  using: 'composite'
+  steps:
+    - run: $GITHUB_ACTION_PATH/annotate-1.bash
+      shell: bash
